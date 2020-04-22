@@ -192,8 +192,8 @@ public class ImageRendererImpl implements ImageRenderer {
 		try {
 			final String imageFormat = getImageFormat(filename);
 			final FSImageWriter imageWriter = getImageWriter(imageFormat);
-			final boolean isBMP = "bmp".equalsIgnoreCase(imageFormat);
-			final BufferedImage bufferedImage = getBufferedImage(isBMP ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);
+			final boolean isPNG = "png".equalsIgnoreCase(imageFormat);
+			final BufferedImage bufferedImage = getBufferedImage(isPNG ? BufferedImage.TYPE_INT_ARGB : BufferedImage.TYPE_INT_RGB);
 			imageWriter.write(bufferedImage, outputStream);
 		} catch (IOException e) {
 			throw new RenderException("IOException while rendering image", e);

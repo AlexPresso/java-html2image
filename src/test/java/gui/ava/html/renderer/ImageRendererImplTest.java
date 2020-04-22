@@ -23,15 +23,15 @@ public class ImageRendererImplTest extends BaseTest {
 	@Test
 	public void testSaveStream() throws Exception {
 		parser.load(getTest1Url());
-		renderer.saveImage(new FileOutputStream("file1.png"), true);
+		renderer.saveImage(new FileOutputStream("test-out/file1.png"), true);
 	}
 
 	@Test
 	public void testSaveFile() throws Exception {
 		parser.load(getTest1Url());
-		renderer.saveImage("test.gif");
-		renderer.saveImage("test.png");
-		renderer.saveImage("test.jpg");
-		renderer.saveImage("test.bmp");
+		renderer.saveImage("test-out/test.gif");
+		renderer.saveImage("test-out/test.png");
+		renderer.saveImage("test-out/test.jpg");
+		renderer.saveImage("test-out/test.bmp");
 	}
 }

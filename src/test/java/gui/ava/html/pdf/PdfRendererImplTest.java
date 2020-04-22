@@ -10,6 +10,6 @@ import org.junit.Test;
 public class PdfRendererImplTest extends BaseTest {
 	@Test
 	public void testSaveToPDF() throws Exception {
-		Html2Image.fromURL(getTest1Url()).getPdfRenderer().saveToPDF("test.pdf");
+		Html2Image.fromURL(getTest1Url()).getPdfRenderer().saveToPDF("test-out/test.pdf");
 	}
 }
