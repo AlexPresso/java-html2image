@@ -2,7 +2,7 @@ package gui.ava.html.imagemap;
 
 import gui.ava.html.exception.RenderException;
 import gui.ava.html.renderer.LayoutHolder;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
