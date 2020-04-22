@@ -5,7 +5,7 @@ Originally forked from [this repository](https://github.com/hkirk/java-html2imag
 
 This simple Java library converts plain HTML markup to image and provides client-side image-map using HTML <map> element.
 
-###What Can I Do With It: Use Cases
+#### What Can I Do With It: Use Cases
 
 * Programmatically compose images - Use case: You need to compose images from other images and texts.
 
@@ -24,7 +24,7 @@ This simple Java library converts plain HTML markup to image and provides client
    - The email addresses are in plain text, allowing robots and spiders to harvest these addresses and spam your team with Viagra ads.
    - Solution - Use Html2Image to convert those email addresses to images.
 
-###What Do I Give and What Do I Get
+#### What Do I Give and What Do I Get
 
 Html2Image allows you to transform this HTML markup:
 
@@ -54,7 +54,7 @@ imageGenerator.saveAsImage("hello-world.png");
 imageGenerator.saveAsHtmlWithMap("hello-world.html", "hello-world.png");
 Which will generate hello-world.png image of the HTML and hello-world.html file containing client-side image-map <map> (as in the example above).
 
-###HtmlImageGenerator Methods
+#### HtmlImageGenerator Methods
 
 * loadUrl(url) - Loads HTML from URL object or URL string.
 * loadHtml(html) - Loads HTML source.
@@ -66,7 +66,7 @@ Which will generate hello-world.png image of the HTML and hello-world.html file 
 * get/setOrientation(orientation) - Get/Set document orientation (left-to-right or right-to-left).
 * get/setSize(dimension) - Get/Set size of the generated image.
 
-###Download
+#### Download
 You can download Html2Image from the download page or use it as Maven dependency:
 
 ```xml
